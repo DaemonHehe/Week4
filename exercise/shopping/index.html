@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart with Discounts</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Shopping Cart with Discounts</h1>
+
+        <div class="form">
+            <input type="text" id="itemName" placeholder="Item Name">
+            <input type="number" id="price" placeholder="Price" step="0.01">
+            <input type="number" id="quantity" placeholder="Quantity" min="1" value="1">
+            <input type="number" id="discount" placeholder="Discount (%)">
+            <button onclick="addItem()">Add Item</button>
+        </div>
+
+        <div class="item-list">
+            <h2>Cart Items</h2>
+            <div id="item-list"></div>
+        </div>
+
+        <div class="summary">
+            <p>Total Price: $<span id="total-price">0.00</span></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
